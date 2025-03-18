@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script> 
     function searchPackage() {
-            var destination = document.getElementById("searchBox").value.toLowerCase();
-            if (destination.includes("Historical Delhi Exploration")) {
-                window.location.href = "delhi.jsp";
-            } else if (destination.includes("bangalore")) {
-                window.location.href = "bangalore.jsp";
-            } else if (destination.includes("rajasthan")) {
-                window.location.href = "rajasthan.jsp";
-            } else {
-                alert("Package not found! Please try again.");
-            }
+        var destination = document.querySelector("select[name='destination']").value.toLowerCase();
+        if (destination.includes("history")) {
+            window.location.href = "delhi.jsp";
+        } else if (destination.includes("science")) {
+            window.location.href = "bangalore.jsp";
+        } else if (destination.includes("cultural")) {
+            window.location.href = "rajasthan.jsp";
+        } else {
+            alert("Package not found! Please try again.");
         }
+    }
     </script>
 </head>
 <body>
@@ -200,8 +200,8 @@
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="section-header">
-            <h2>What Students Say</h2>
-            <p>Hear from students who have experienced our educational trips</p>
+            <center><h2>What Students Say</h2></center>
+           <center> <p>Hear from students who have experienced our educational trips</p></center>
         </div>
         <div class="testimonials-container">
             <div class="testimonial">
